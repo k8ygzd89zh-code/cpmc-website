@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Mail, Phone, MapPin, ChevronRight } from 'lucide-react';
+import { img } from '../lib/paths';
 
 const footerLinks = {
   company: {
@@ -40,7 +41,7 @@ export default function Footer() {
           <div className="lg:col-span-4">
             <Link href="/" className="inline-block group">
               <div className="flex items-center gap-3 mb-6">
-                <img src="/products/CPMC LOGO.png" alt="CPMC" className="w-10 h-10 object-contain" />
+                <img src={img("/products/CPMC LOGO.png")} alt="CPMC" className="w-10 h-10 object-contain" />
                 <div>
                   <div className="text-sm font-bold tracking-[0.2em] text-[#1A1A1A]">CPMC HOLDINGS</div>
                   <div className="text-[10px] text-[#888] tracking-[0.25em] mt-0.5">华瑞新控股</div>

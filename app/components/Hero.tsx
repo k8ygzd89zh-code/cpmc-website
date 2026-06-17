@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -24,7 +25,7 @@ export default function Hero() {
           className="absolute inset-0 w-full h-full object-cover"
         >
           {/* Background video */}
-          <source src="/网站首页视频end.mp4" type="video/mp4" />
+          <source src={img("/网站首页视频end.mp4")} type="video/mp4" />
         </video>
         {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-white pointer-events-none" />

@@ -5,6 +5,7 @@ import { motion, useInView } from 'framer-motion';
 import { MapPin, Mail, Phone, Clock, Send, ArrowUpRight, Globe, Building2, Truck, Newspaper, Handshake } from 'lucide-react';
 import { PRODUCT_CATEGORIES } from '../lib/data';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 
 
 const offices = [
@@ -41,7 +42,7 @@ export default function ContactPage() {
       <section ref={heroRef} className="relative min-h-[45vh] flex items-center bg-[#1A1A1A] overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/products/Contact Us.png"
+            src={img("/products/Contact Us.png")}
             alt="Contact Us"
             className="absolute inset-0 w-full h-full object-cover"
           />

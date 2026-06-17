@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { CLIENT_LOGOS } from '../lib/data';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 
 export default function Clients() {
   const { t } = useLanguage();
@@ -39,7 +40,7 @@ export default function Clients() {
               <div key={i}
                 className="shrink-0 h-16 flex items-center justify-center">
                 <img
-                  src={logo}
+                  src={img(logo)}
                   alt={`Client logo ${i + 1}`}
                   className="h-full w-auto max-w-[150px] object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0"
                   loading="lazy"
@@ -56,7 +57,7 @@ export default function Clients() {
               <div key={i}
                 className="shrink-0 h-16 flex items-center justify-center">
                 <img
-                  src={logo}
+                  src={img(logo)}
                   alt={`Client logo ${i + 1}`}
                   className="h-full w-auto max-w-[150px] object-contain opacity-70 hover:opacity-100 transition-all duration-300 grayscale hover:grayscale-0"
                   loading="lazy"

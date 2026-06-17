@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowUpRight, Search } from 'lucide-react';
 import { PRODUCT_CATEGORIES } from '../lib/data';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 import VisualImage from '../components/VisualImage';
 
 export default function ProductsPage() {
@@ -26,7 +27,7 @@ export default function ProductsPage() {
       <section ref={heroRef} className="relative min-h-[50vh] flex items-center justify-center bg-[#1A1A1A] overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/products/Products Precision Packaging Solutions.png"
+            src={img("/products/Products Precision Packaging Solutions.png")}
             alt="Precision Packaging Solutions"
             className="absolute inset-0 w-full h-full object-cover"
           />

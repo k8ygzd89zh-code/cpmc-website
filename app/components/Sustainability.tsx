@@ -6,6 +6,7 @@ import { Leaf, Sun, Recycle, Wind, Factory, Droplets } from 'lucide-react';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 
 const initiatives = [
   { icon: Sun, title: 'Solar Energy', titleCN: '光伏太阳能',
@@ -38,7 +39,7 @@ export default function Sustainability() {
       {/* ── Background image — full cover, no overlay ── */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/products/sustainability-bg.png.png"
+          src={img("/products/sustainability-bg.png.png")}
           alt=""
           className="w-full h-full object-cover"
         />

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { CORPORATE_STATS } from '../lib/data';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 
 function AnimatedNumber({ value, suffix = '' }: { value: string; suffix?: string }) {
   const ref = useRef<HTMLSpanElement>(null);
@@ -42,7 +43,7 @@ export default function Numbers() {
       {/* ── Background image ── */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/products/Scale That Matters.png"
+          src={img("/products/Scale That Matters.png")}
           alt=""
           className="w-full h-full object-cover"
         />

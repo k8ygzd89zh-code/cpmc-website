@@ -6,6 +6,7 @@ import { Leaf, Factory, Sun, Wind, Recycle, Droplets, Truck, Shield, TrendingUp,
 import Link from 'next/link';
 import { SUSTAINABILITY_STATS } from '../lib/data';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 import VisualImage from '../components/VisualImage';
 
 const scopeItems = [
@@ -49,7 +50,7 @@ export default function SustainabilityPage() {
         <div className="absolute inset-0 bg-grid pointer-events-none z-10" />
         <div className="absolute inset-0">
           <img
-            src="/products/Sustainability.png"
+            src={img("/products/Sustainability.png")}
             alt="Sustainability"
             className="absolute inset-0 w-full h-full object-cover"
           />

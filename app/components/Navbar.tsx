@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, Globe } from 'lucide-react';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 
 type NavLink = {
   label: string;
@@ -63,8 +64,8 @@ export default function Navbar() {
         <div className="max-w-[1440px] mx-auto pl-8 pr-6 lg:pl-12 lg:pr-12">
           <div className="flex items-center justify-between h-20">
             <Link href="/" className="group flex items-center gap-4">
-              <img src="/products/OGR LOGO.png" alt="ORG" className="h-16 w-auto" />
-              <img src="/products/CPMC LOGO.png" alt="CPMC" className="h-16 w-auto" />
+              <img src={img("/products/OGR LOGO.png")} alt="ORG" className="h-16 w-auto" />
+              <img src={img("/products/CPMC LOGO.png")} alt="CPMC" className="h-16 w-auto" />
               <div className="hidden sm:block">
                 <div className="text-xl font-bold tracking-[0.15em] leading-none text-[#1A1A1A]">CPMC HOLDINGS</div>
                 <div className="text-sm tracking-[0.2em] mt-1 leading-none text-[#888]">华瑞新控股</div>

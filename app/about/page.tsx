@@ -6,16 +6,17 @@ import { Shield, Microscope, Globe, Users, CheckCircle, ArrowUpRight } from 'luc
 import Link from 'next/link';
 import { MILESTONES } from '../lib/data';
 import { useLanguage } from '../lib/LanguageContext';
+import { img } from '../lib/paths';
 
 
 const certImages: Record<string, string> = {
-  'ISO 9001': '/products/ISO9001.png',
-  'ISO 14001': '/products/ISO14001.png',
-  'ISO 45001': '/products/ISO45001.png',
-  'DOT': '/products/DOT.png',
-  'FSSC 22000': '/products/FSSC22000.png',
-  'Carbon Footprint': '/products/CARBON FOOTPRINT.png',
-  'CNAS': '/products/CNAS.png',
+  'ISO 9001': img('/products/ISO9001.png'),
+  'ISO 14001': img('/products/ISO14001.png'),
+  'ISO 45001': img('/products/ISO45001.png'),
+  'DOT': img('/products/DOT.png'),
+  'FSSC 22000': img('/products/FSSC22000.png'),
+  'Carbon Footprint': img('/products/CARBON FOOTPRINT.png'),
+  'CNAS': img('/products/CNAS.png'),
 };
 
 const certifications = [
@@ -54,7 +55,7 @@ export default function AboutPage() {
       <section ref={heroRef} className="relative min-h-[60vh] flex items-center bg-[#1A1A1A] overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/products/About CPMC Holdings Guardians of Every Product You Hold in Your Hands..png"
+            src={img("/products/About CPMC Holdings Guardians of Every Product You Hold in Your Hands..png")}
             alt="About CPMC Holdings"
             className="absolute inset-0 w-full h-full object-cover"
           />
