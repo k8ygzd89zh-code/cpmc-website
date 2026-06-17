@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Background Video — like Crown's hero */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video
           ref={videoRef}
@@ -21,10 +21,10 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="/logos/hero-poster.jpg"
+          preload="none"
+          poster={img("/products/Scale That Matters.png")}
           className="absolute inset-0 w-full h-full object-cover"
         >
-          {/* Background video */}
           <source src={img("/网站首页视频end.mp4")} type="video/mp4" />
         </video>
         {/* Dark overlay for readability */}
