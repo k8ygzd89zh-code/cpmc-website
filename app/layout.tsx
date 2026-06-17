@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body className="bg-[#0A0A0A] text-white antialiased">
         <LanguageProvider>
           <ClientLayout>{children}</ClientLayout>
